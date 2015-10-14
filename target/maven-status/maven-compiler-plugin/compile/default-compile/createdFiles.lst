@@ -1,9 +1,0 @@
-com/ippon/blog/spark_blog_examples/cassandra/reader/GenericRowReader.class
-com/ippon/blog/spark_blog_examples/controller/BaseballDataControllerCassandra.class
-com/ippon/blog/spark_blog_examples/controller/BaseballDataController.class
-com/ippon/blog/spark_blog_examples/cassandra/reader/GameScheduleRowReader$GameScheduleRowReaderFactory.class
-com/ippon/blog/spark_blog_examples/cassandra/writer/DayGamesWriter.class
-com/ippon/blog/spark_blog_examples/cassandra/reader/GameScheduleRowReader.class
-com/ippon/blog/spark_blog_examples/model/GameSchedule.class
-com/ippon/blog/spark_blog_examples/controller/BaseballDataController$1.class
-com/ippon/blog/spark_blog_examples/cassandra/writer/DayGamesWriter$DayGamesRowWriterFactory.class
