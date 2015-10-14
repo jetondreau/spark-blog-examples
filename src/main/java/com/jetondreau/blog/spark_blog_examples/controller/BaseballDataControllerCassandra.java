@@ -1,4 +1,4 @@
-package com.ippon.blog.spark_blog_examples.controller;
+package com.jetondreau.blog.spark_blog_examples.controller;
 
 import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaRDD;
@@ -6,9 +6,9 @@ import org.apache.spark.api.java.JavaSparkContext;
 
 import com.datastax.spark.connector.japi.CassandraJavaUtil;
 import com.datastax.spark.connector.japi.rdd.CassandraTableScanJavaRDD;
-import com.ippon.blog.spark_blog_examples.cassandra.reader.GameScheduleRowReader.GameScheduleRowReaderFactory;
-import com.ippon.blog.spark_blog_examples.cassandra.writer.DayGamesWriter.DayGamesRowWriterFactory;
-import com.ippon.blog.spark_blog_examples.model.GameSchedule;
+import com.jetondreau.blog.spark_blog_examples.cassandra.reader.GameScheduleRowReader.GameScheduleRowReaderFactory;
+import com.jetondreau.blog.spark_blog_examples.cassandra.writer.DayGamesWriter.DayGamesRowWriterFactory;
+import com.jetondreau.blog.spark_blog_examples.model.GameSchedule;
 
 public class BaseballDataControllerCassandra {
 

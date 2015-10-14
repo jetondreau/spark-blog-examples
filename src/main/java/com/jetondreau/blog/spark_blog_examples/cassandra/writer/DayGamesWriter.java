@@ -1,4 +1,4 @@
-package com.ippon.blog.spark_blog_examples.cassandra.writer;
+package com.jetondreau.blog.spark_blog_examples.cassandra.writer;
 
 import java.io.Serializable;
 
@@ -6,7 +6,7 @@ import com.datastax.spark.connector.ColumnRef;
 import com.datastax.spark.connector.cql.TableDef;
 import com.datastax.spark.connector.writer.RowWriter;
 import com.datastax.spark.connector.writer.RowWriterFactory;
-import com.ippon.blog.spark_blog_examples.model.GameSchedule;
+import com.jetondreau.blog.spark_blog_examples.model.GameSchedule;
 
 import scala.collection.IndexedSeq;
 import scala.collection.JavaConversions;

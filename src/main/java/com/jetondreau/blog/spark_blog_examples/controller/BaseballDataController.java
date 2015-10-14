@@ -1,4 +1,4 @@
-package com.ippon.blog.spark_blog_examples.controller;
+package com.jetondreau.blog.spark_blog_examples.controller;
 
 import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaRDD;

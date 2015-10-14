@@ -1,4 +1,4 @@
-package com.ippon.blog.spark_blog_examples.model;
+package com.jetondreau.blog.spark_blog_examples.model;
 
 import java.io.Serializable;
 import java.util.ArrayList;

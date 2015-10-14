@@ -1,4 +1,4 @@
-package com.ippon.blog.spark_blog_examples.cassandra.reader;
+package com.jetondreau.blog.spark_blog_examples.cassandra.reader;
 
 import java.io.Serializable;
 

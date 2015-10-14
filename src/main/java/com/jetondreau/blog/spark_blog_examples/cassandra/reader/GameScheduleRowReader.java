@@ -1,4 +1,4 @@
-package com.ippon.blog.spark_blog_examples.cassandra.reader;
+package com.jetondreau.blog.spark_blog_examples.cassandra.reader;
 
 import java.io.Serializable;
 
@@ -8,7 +8,7 @@ import com.datastax.spark.connector.ColumnRef;
 import com.datastax.spark.connector.cql.TableDef;
 import com.datastax.spark.connector.rdd.reader.RowReader;
 import com.datastax.spark.connector.rdd.reader.RowReaderFactory;
-import com.ippon.blog.spark_blog_examples.model.GameSchedule;
+import com.jetondreau.blog.spark_blog_examples.model.GameSchedule;
 
 import scala.collection.IndexedSeq;
 
