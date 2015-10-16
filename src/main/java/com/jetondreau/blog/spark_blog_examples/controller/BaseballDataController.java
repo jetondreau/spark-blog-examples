@@ -1,5 +1,7 @@
 package com.jetondreau.blog.spark_blog_examples.controller;
 
+import java.util.StringJoiner;
+
 import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
@@ -14,14 +16,10 @@ public class BaseballDataController {
 
 		@Override
 		public String call(String[] game) throws Exception {
-			StringBuffer gameString = new StringBuffer();
-			if (game.length != 0) {
-				gameString.append(game[0]);
-				for (int i = 1; i < game.length; i++) {
-					gameString.append(",");
-					gameString.append(game[i]);
+			StringJoiner gameString = new StringJoiner(",");
+				for (int i = 0; i < game.length; i++) {
+					gameString.add(game[i]);
 				}
-			}
 
 			return gameString.toString();
 		}
@@ -35,9 +33,9 @@ public class BaseballDataController {
 		}
 
 		SparkConf conf = new SparkConf().setAppName("Boston Red Sox Scheduled Day Games");
-		JavaSparkContext context = new JavaSparkContext(conf);
+		JavaSparkContext sc = new JavaSparkContext(conf);
 		// context.
-		JavaRDD<String> schedules = context.textFile(args[0]);
+		JavaRDD<String> schedules = sc.textFile(args[0]);
 		// Break up the lines based on the comma delimiter.
 		JavaRDD<String[]> mappedFile = schedules.map(line -> line.split(",", -1));
 
@@ -59,7 +57,7 @@ public class BaseballDataController {
 		// Save back to HDFS
 		mappedHomeGames.saveAsTextFile(args[1] + "/homeGames");
 
-		context.close();
+		sc.close();
 	}
 
 }
