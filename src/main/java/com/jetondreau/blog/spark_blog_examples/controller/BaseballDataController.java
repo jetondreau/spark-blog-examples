@@ -41,7 +41,6 @@ public class BaseballDataController {
 
 		// Filter out away games played by the team being examined.
 		JavaRDD<String[]> awayGames = mappedFile.filter(line -> line[3].equals(args[2]) && line[9].equals("d"));
-
 		//Map array back to a String
 		JavaRDD<String> mappedAwayGames = awayGames.map(APPEND_GAME);
 
